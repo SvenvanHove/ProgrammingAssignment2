@@ -1,6 +1,6 @@
 # This function creates an object that can cache an inverse of a matrix.
-# The crux is the "<<-"" statement in the lines 7,8 and 11. At that points an object will be searched, 
-# that lies in an environment above the level in which it was defined.
+# The crux is the "<<-"" statement in the lines 7,8 and 11. Here objects will be stored in  
+# an environment above the level in which it was defined.
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
     set <- function(y) {
